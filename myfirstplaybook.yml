@@ -11,4 +11,9 @@
     apt:
        name: tree
        state: present
-            
+
+  - name: in this task, iwant to install wget
+    apt: 
+       name: wget
+       state: present
+       
