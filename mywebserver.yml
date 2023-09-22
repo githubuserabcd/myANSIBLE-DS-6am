@@ -15,11 +15,11 @@
     when: ansible_os_family== "Debian" 
   - name: in this task, i want to install httpd webserver on redhat
     dnf:
-      name: http"{{mywebpackonredhat}}
+      name: "{{mywebpackonredhat}}"
       state: present
     when: ansible_os_family== "RedHat"
   - name: in this task, i want to start webserver on redhat
     service:
       name: "{{mywebpackonredhat}}"
-      stste: started
+      state: started
     when: ansible_os_family== "RedHat" 
